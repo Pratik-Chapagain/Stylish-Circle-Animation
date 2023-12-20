@@ -1,0 +1,54 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101010;
+}
+:root{
+   --border: 1px solid red;
+}
+.container{
+    width: 200px;
+    aspect-ratio: 1;
+    position: relative;
+}
+.container div{
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow:0 0 0 3px hsl(270, 86%, var(--color));
+    display: flex;
+    justify-content: center;
+    animation: anime 8s linear infinite;
+}
+@keyframes anime {
+    100% {transform: rotate(-360deg);}
+}
+.container .circle1{
+    width: 100%;
+    --color: 30%;
+}
+.container .circle2{
+    width: 50%;
+    --color: 40%;
+}
+.container .circle3{
+    width: 150%;
+    --color: 50%;
+}
+.container .circle4{
+    width: 50%;
+    --color: 60%;
+}
+.container .circle5{
+    width: 65%;
+    --color: 70%;
+}
+.container .circle6{
+    width: 50%;
+    --color: 80%;
+}
